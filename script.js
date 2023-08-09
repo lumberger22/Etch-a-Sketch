@@ -28,13 +28,9 @@ function drawGrid(numberOfGrids) {
     oldGridSize = numberOfGrids;
 }
 
-function addStyle(element) {
-    element.style.backgroundColor = 'grey';
-}
-
 function resetStyle() {
     for (let i = 1; i <= Math.pow(oldGridSize, 2); i++) {
-        window['grid' + i].style.backgroundColor = 'white';
+        window['grid' + i].style.backgroundColor = 'lightgrey';
     }
 }
 

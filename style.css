@@ -10,7 +10,9 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    box-sizing: border-box;
+    background-image: url('https://wallpapers.com/images/featured/blackboard-background-7q4z6ypqigw9nbis.jpg');
+    background-position: center;
+    background-size: 100vw auto;
 }
 
 .container {
@@ -18,11 +20,44 @@ body {
     flex-wrap: wrap;
     width: 450px;
     height: 450px;
-    border: solid black;
+    background-color: lightgray;
+    border: solid 5px lightgrey;
+    border-radius: 5px;
 }
 
 #new-grid {
     margin: 30px;
 }
 
+.toy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(180, 37, 37);
+    box-shadow: 20px 20px darkred;
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+}
+
+.circle {
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 5px rgb(228, 228, 228);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+
+.circle-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lucida Handwriting", cursive;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+}
 

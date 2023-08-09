@@ -8,7 +8,7 @@ const clearStylesBtn = document.getElementById('clear-styles')
 let oldGridSize = 16;
 
 //Actions
-window.onload = drawGrid(16);
+window.onload = drawGrid(60);
 newGridBtn.addEventListener('click', drawNewGrid);
 clearStylesBtn.addEventListener('click', resetStyle);
 

@@ -3,18 +3,20 @@ const container = document.querySelector('.container');
 
 //Variable Declarations
 const containerID = document.getElementById('containerID')
+const newGridBtn = document.getElementById('new-grid')
 let oldGridSize = 16;
 
 //Actions
-window.onLoad = drawGrid(16);
+window.onload = drawGrid(16);
+newGridBtn.addEventListener('click', drawNewGrid);
 
 //Functions
 function drawGrid(numberOfGrids) {
     for (let i = 1; i <= Math.pow(numberOfGrids, 2); i++) {
         window['grid' + i] = document.createElement('div');
         window['grid' + i].style.border = 'solid black';
-        window['grid' + i].style.width = (960/numberOfGrids) + 'px';
-        window['grid' + i].style.height = (960/numberOfGrids) + 'px';
+        window['grid' + i].style.width = ((450)/numberOfGrids) + 'px';
+        window['grid' + i].style.height = ((450)/numberOfGrids) + 'px';
         window['grid' + i].style.boxSizing = 'border-box';
         containerID.appendChild(window['grid' + i]);
         window['grid' + i].addEventListener('mouseenter', function(e) {
